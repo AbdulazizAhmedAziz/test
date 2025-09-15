@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdulaziz Abdulmegied — Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    body{margin:0;background:linear-gradient(180deg,#071028 0%, #071b2b 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:48px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:132px;height:132px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:28px}
+    p.tag{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .section-title{font-weight:600;color:#dff6fb;margin-bottom:10px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects{display:grid;grid-template-columns:repeat(1,1fr);gap:12px}
+    .proj{padding:12px;background:rgba(255,255,255,0.02);border-radius:8px}
+    a.button{display:inline-block;background:var(--accent);color:#04232a;padding:10px 14px;border-radius:8px;font-weight:600;text-decoration:none}
+    footer{margin-top:32px;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr} .avatar{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar card">
+        <img src="https://via.placeholder.com/300x300.png?text=Abdulaziz" alt="Abdulaziz Abdulmegied">
+      </div>
+      <div>
+        <h1>Abdulaziz Abdulmegied</h1>
+        <p class="tag">Aspiring Data Scientist — Turning data into actionable insights</p>
+        <p style="margin-top:12px;color:var(--muted)">Based in Egypt • Open to remote & local opportunities • Email: <a href="mailto:abdulaziz@example.com">abdulaziz@example.com</a></p>
+        <div style="margin-top:12px">
+          <a class="button" href="#portfolio">View Portfolio</a>
+          <a class="button" style="margin-left:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card" id="about" style="margin-bottom:16px">
+          <div class="section-title">About</div>
+          <p style="color:var(--muted)">I am a final-year engineering student (graduation 2026) specializing in data science and analytics. I build clean data pipelines, create predictive models, and craft visual stories that inform business decisions. I enjoy hands-on projects, competitions, and learning new tools in the data ecosystem.</p>
+        </section>
+
+        <section class="card" id="portfolio">
+          <div class="section-title">Portfolio / Projects</div>
+          <div class="projects">
+            <div class="proj">
+              <strong>Project 1 — Student Performance Predictor</strong>
+              <p style="color:var(--muted);margin:6px 0 0">Built a supervised learning model to predict student success using Python, scikit-learn, and feature engineering. Achieved 82% accuracy and deployed a demo dashboard.</p>
+            </div>
+            <div class="proj">
+              <strong>Project 2 — Customer Segmentation</strong>
+              <p style="color:var(--muted);margin:6px 0 0">Performed clustering analysis on transactional data to identify high-value customer segments. Visualized findings with Plotly and presented business recommendations.</p>
+            </div>
+            <div class="proj">
+              <strong>Project 3 — IoT Telemetry Analytics</strong>
+              <p style="color:var(--muted);margin:6px 0 0">Processed time-series sensor data, removed anomalies, and implemented forecasting models for predictive maintenance.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="skills" style="margin-top:16px">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">scikit-learn</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Data Visualization</span>
+            <span class="skill">Git</span>
+            <span class="skill">Tableau / PowerBI</span>
+            <span class="skill">Docker (basic)</span>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Contact & Links</div>
+          <p style="color:var(--muted);margin:8px 0">Email: <a href="mailto:abdulaziz@example.com">abdulaziz@example.com</a></p>
+          <p style="color:var(--muted);margin:8px 0">LinkedIn: <a href="https://www.linkedin.com/in/abdulaziz-abdulmegied" target="_blank">linkedin.com/in/abdulaziz-abdulmegied</a></p>
+          <p style="color:var(--muted);margin:8px 0">GitHub: <a href="https://github.com/abdulaziz-abdulmegied" target="_blank">github.com/abdulaziz-abdulmegied</a></p>
+          <div style="margin-top:12px">
+            <a class="button" href="/resume.pdf">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Availability</div>
+          <p style="color:var(--muted);margin:6px 0">Open to internships, freelance projects, and entry-level data roles. Willing to relocate within Egypt.</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Education</div>
+          <p style="color:var(--muted);margin:6px 0">B.Eng. — Faculty of Engineering (2021 — expected 2026). GPA: 3.36/4</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© 2025 Abdulaziz Abdulmegied — Built as a clean, responsive single-page portfolio. Replace placeholder content and host on any static hosting provider (Netlify, GitHub Pages, Vercel, or your own domain).</p>
+    </footer>
+  </div>
+</body>
+</html>
